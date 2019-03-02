@@ -1,5 +1,7 @@
 {
   "name": "v1moneyconvertion",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
