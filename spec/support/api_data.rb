@@ -2,18 +2,17 @@ RSpec.configure do |config|
   config.before(:each) do
     stub_request(:get, /currencydatafeed.com/ )
     .with(headers: {
-      'Accept' => '*/*'
+      'Accept'=> '*/*'
     }).to_return(status: 200, body: '
       {
-        "status": true,
-        "currency": [
-          {
-            "currency: "USD/BRL",
-            "value": "3.41323",
-            "date": "2018-04-20 17:22:59",
-            "type": "original"
-          }
-        ]
+        "status":true,
+        "currency":
+        [{
+          "currency":"EUR/AUD",
+          "value":"8752.42500",
+          "date":"2019-01-12 16:00:06",
+          "type":"original"
+        }]
       }', headers: {})
   end
 end
