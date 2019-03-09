@@ -9,9 +9,9 @@ RSpec.describe "Exchange Curency Process", :type => :system, js: true do
 
       fill_in "amount", with: '10'
     end
-    click_button 'Converter'
+    click_button 'CONVERTER'
 
     #save_and_open_page
-    expect(page).to have_content(value)
+    expect(page).to have_content("value")
   end
 end
